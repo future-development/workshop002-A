@@ -23,3 +23,7 @@ Route::get('/', 'ImageController@index');
 
 Route::post('upload', 'ImageController@upload');
 Route::get('upload', 'ImageController@index'); //エラー用
+
+// DetectTextFromImage
+Route::post('detect', 'ImageController@detect');
+Route::get('detect', 'ImageController@index');
