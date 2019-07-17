@@ -18,3 +18,8 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/', 'ImageController@index');
+
+Route::post('upload', 'ImageController@upload');
+Route::get('upload', 'ImageController@index'); //エラー用
